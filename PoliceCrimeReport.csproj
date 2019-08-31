@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8159B343-8BF7-4E4F-9429-92A285832EA2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PoliceCrimeReport</RootNamespace>
+    <AssemblyName>PoliceCrimeReport</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminCreateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminCreateUser.Designer.cs">
+      <DependentUpon>AdminCreateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminHome.Designer.cs">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUserList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminUserList.Designer.cs">
+      <DependentUpon>AdminUserList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChiefPoliceView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChiefPoliceView.Designer.cs">
+      <DependentUpon>ChiefPoliceView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommanderView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommanderView.Designer.cs">
+      <DependentUpon>CommanderView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="creatCrimeInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="creatCrimeInfo.Designer.cs">
+      <DependentUpon>creatCrimeInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateFirstInformationReportView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateFirstInformationReportView.Designer.cs">
+      <DependentUpon>CreateFirstInformationReportView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateInformation.Designer.cs">
+      <DependentUpon>CreateInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="criminalList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="criminalList.Designer.cs">
+      <DependentUpon>criminalList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FirstInformationReportsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstInformationReportsView.Designer.cs">
+      <DependentUpon>FirstInformationReportsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformationList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformationList.Designer.cs">
+      <DependentUpon>InformationList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OfficerView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OfficerView.Designer.cs">
+      <DependentUpon>OfficerView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PoliceStationEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PoliceStationEdit.Designer.cs">
+      <DependentUpon>PoliceStationEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PoliceStationView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PoliceStationView.Designer.cs">
+      <DependentUpon>PoliceStationView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="HomePageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePageForm.Designer.cs">
+      <DependentUpon>HomePageForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminCreateUser.resx">
+      <DependentUpon>AdminCreateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminHome.resx">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminUserList.resx">
+      <DependentUpon>AdminUserList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChiefPoliceView.resx">
+      <DependentUpon>ChiefPoliceView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommanderView.resx">
+      <DependentUpon>CommanderView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="creatCrimeInfo.resx">
+      <DependentUpon>creatCrimeInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateFirstInformationReportView.resx">
+      <DependentUpon>CreateFirstInformationReportView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateInformation.resx">
+      <DependentUpon>CreateInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="criminalList.resx">
+      <DependentUpon>criminalList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstInformationReportsView.resx">
+      <DependentUpon>FirstInformationReportsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformationList.resx">
+      <DependentUpon>InformationList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OfficerView.resx">
+      <DependentUpon>OfficerView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PoliceStationEdit.resx">
+      <DependentUpon>PoliceStationEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PoliceStationView.resx">
+      <DependentUpon>PoliceStationView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="HomePageForm.resx">
+      <DependentUpon>HomePageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
